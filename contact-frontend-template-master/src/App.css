@@ -1,0 +1,194 @@
+.appContainer {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.appContainer--title {
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.mainContainer {
+  display: flex;
+  border: 1px solid #9b9b9b;
+  position: relative;
+  width: 600px;
+  height: 500px;
+}
+
+.mainContainer--leftBox {
+  flex: 1;
+  border-right: 1px solid #9b9b9b;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContainer--rightBox {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContainer--editBox {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.circleButton {
+  position: absolute;
+  border: none;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.circleButton:disabled {
+  cursor: not-allowed;
+  background-color: #b6b6b6;
+}
+
+.mainContainer--circleButton__add {
+  bottom: 10px;
+  right: 120px;
+  background-color: #28adfa;
+}
+
+.mainContainer--circleButton__mod {
+  bottom: 10px;
+  right: 65px;
+  background-color: #FFD400;
+}
+
+.mainContainer--circleButton__del {
+  bottom: 10px;
+  right: 10px;
+  background-color: #c96e32;
+}
+
+.mainContainer--buttonBox {
+  margin-top: 20px;
+}
+
+.emptyBox {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactList {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.contactCard {
+  display: flex;
+  background-color: "inherit";
+}
+
+.contactCard[aria-selected] {
+  background-color: #28adfa
+}
+
+.contactCard>button {
+  flex: 1;
+  height: 80px;
+  border: 0;
+  border-bottom: 1px solid #d4d3d3;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  z-index: 0;
+  background-color: transparent;
+  color: inherit;
+}
+
+.contactCard[aria-selected]>button {
+  color:white;
+}
+
+.contactCard>div {
+  padding:5px;
+}
+
+.searchBox {
+  background-color: #f8f8f8;
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #9b9b9b;
+}
+
+.searchBox--input {
+  flex: 1;
+  font-size: medium;
+  padding: 10px;
+  outline-color: #28adfa;
+}
+
+
+.editItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.editItem>label {
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.editItem>input {
+  outline-color: #28adfa;
+  font-size: medium;
+}
+
+.buttonBox {
+  margin-top: 20px;
+}
+
+.buttonBox>button[aria-label="confirm"] {
+  background: #28adfa;
+  color: white;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid #28adfa;
+  border-radius: 3px;
+}
+
+.buttonBox>button[aria-label="cancel"] {
+  background: white;
+  color: #28adfa;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid #28adfa;
+  border-radius: 3px;
+}
+
+dl.contactItem {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+
+dl.contactItem>dt {
+  font-weight: bold;
+  padding: 5px;
+}
+
+dl.contactItem>dd {
+  padding: 5px;
+}
