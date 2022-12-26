@@ -8,6 +8,7 @@ import EditItem from "./components/EditItem";
 import ContactCard from "./components/ContactCard";
 import EmptyBox from "./components/EmptyBox";
 import ContactDetail from "./components/ContactDetail";
+import AddContact from "./components/AddContact";
 
 function App() {
   return (
@@ -15,16 +16,9 @@ function App() {
       <AppContainer.Title>Unit5 연락처</AppContainer.Title>
       <MainContainer>
         <MainContainer.EditBox>
-          <h1>연락처를 등록하세요</h1>
-          <EditItem title="이름" />
-          <EditItem title="전화번호" />
-          <EditItem title="회사번호" />
-          <EditItem title="주소" />
-          <EditItem title="설명" />
-          <div className="buttonBox">
-            <button aria-label="confirm">확인</button>
-            <button aria-label="cancel">취소</button>
-          </div>
+         <AddContact onSubmit={function (form: { name: string; phoneNum: string; cno: string; adress: string; description: string; }): void {
+            throw new Error("Function not implemented.");
+          } } />
         </MainContainer.EditBox>
       </MainContainer>
       <MainContainer>

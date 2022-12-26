@@ -9,6 +9,12 @@
       {
         "aria-required-parent": "off"
       }
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
     ]
   }
 }
